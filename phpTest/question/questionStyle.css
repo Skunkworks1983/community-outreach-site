@@ -1,0 +1,57 @@
+body{
+    background-color: #dddddd;
+    text-align: center;
+    font-family: "Avenir Next", Arial, serif;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.submitButton:hover {
+    background: #4CAF50;
+}
+
+label, input {
+    font-family: "Avenir Next", Arial, serif;
+    font-size: 20px;
+}
+
+.labelWrapper {
+    text-align: right;
+    padding-right: 5px;
+}
+
+table {
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+tr {
+    padding: 12px;
+}
+
+th {
+    background-color: #AAAAAA;
+}
+
+td {
+    padding: 12px;
+    width: 16%;
+}
+
+a {
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.remove {
+    background: red;
+}
+
+a.add {
+    background: green;
+}

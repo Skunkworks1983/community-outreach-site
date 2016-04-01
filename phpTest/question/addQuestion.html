@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skunk Works Outreach</title>
+    <link rel="stylesheet" type="text/css" href="../formStyle.css"/>
+</head>
+<body>
+<h1>Skunk Works Outreach</h1>
+<h3>Here are some basic questions about the event</h3>
+<form id="addQuestionForm" method="POST" action="addQuestion.php">
+    <table align="center">
+        <tr>
+            <td class="labelWrapper"><label for="outreach">OUTREACH:</label></td>
+            <!--<td><input type="text" id="outreach" name="outreach" size="20" maxlength="5"></td>-->
+            <script type="text/javascript">
+                function showfield(name){
+                    if(name=='Other')document.getElementById('div1').innerHTML='Other: <input type="text" name="other" />';
+                    else document.getElementById('div1').innerHTML='';
+                }
+            </script>
+            <td><select id="outreach" `  name="outreach" form="addQuestionForm" onchange="showfield(this.options[this.selectedIndex].value)">
+                <option value="BOpre">Business Presentation</option>
+                <option value="BOdem" disabled>Business Demo</option>
+                <option value="COout">Community Outreach</option>
+                <option value="COser">Community Outreach</option>
+                <option value="LOleg">Legislative Outreach</option>
+                <option value="LOedu">Outreach for Educators</option>
+                <option value="FIRST">FIRST</option>
+                <option value="ALUMN" disabled>Alumni</option>
+                <option value="MEDIA" disabled>Media</option>
+                <option value="QUOTE" disabled>Quotes</option>
+                <option value="Other">OTHER</option>
+            </select><div id="div1"></div></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="name">NAME:</label></td>
+            <td><input type="text" id="name" name="name" size=20 maxlength="20"></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="label">LABEL:</label></td>
+            <td><input type="text" id="label" name="label" size="20" maxlength="100"></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="type">TYPE:</label></td>
+            <td><input type="text" id="type" name="type" size="20" maxlength="20"></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="maxLength">MAX LENGTH:</label></td>
+            <td><input type="number" id="maxLength" name="maxLength" size="20" maxlength="2"></td>
+        </tr>
+    </table>
+    <div class="submitButtonWrapper">
+        <button class="submitButton" type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Skunk Works Outreach</title>
+    <link rel="stylesheet" type="text/css" href="formStyle.css"/>
+</head>
+<body>
+<h1>Skunk Works Outreach</h1>
+<h3>Here are some basic questions about the event</h3>
+<form method="POST" action="eventType.php">
+    <table align="center">
+        <tr>
+            <td class="labelWrapper"><label for="owner">Your Name:</label></td>
+            <td><input type="text" id="owner" name="owner" size="20" maxlength="50"></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="numSkunks"># of Students:</label></td>
+            <td><input type="number" id="numSkunks" name="numSkunks" size=20 maxlength="3"></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="numMentors"># of Mentors:</label></td>
+            <td><input type="number" id="numMentors" name="numMentors" size="20" maxlength="3"></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="hours">Hours at Event:</label></td>
+            <td><input type="number" id="hours" name="hours" size="20" maxlength="3"></td>
+        </tr>
+        <tr>
+            <td class="labelWrapper"><label for="date">Date of Event:</label></td>
+            <td><input type="date" id="date" name="date"></td>
+        </tr>
+    </table>
+    <div class="submitButtonWrapper">
+    <button class="submitButton" type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>
